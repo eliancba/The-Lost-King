@@ -14,13 +14,14 @@ meter{width:125px;margin-left:8px;accent-color:#a64b39}
 #menu{position:fixed;inset:0;display:grid;place-items:center;background:#080c09b8;padding:20px}#menu[hidden]{display:none}
 section{width:min(480px,100%);padding:32px;border:1px solid #79654b;background:#151b16;box-shadow:0 12px 65px #0009}
 h1{font-size:clamp(2.3rem,7vw,4.3rem);line-height:.95}p{line-height:1.5;color:#d0c4ad}button{font:inherit;font-weight:700;color:#161713;background:#cfaa70;border:0;padding:11px 17px;margin:4px 8px 4px 0;cursor:pointer}button+button{background:#29382f;color:#e8ddc4}
+.creator{color:#cfaa70;margin:.5rem 0 .9rem;font-size:.9rem}
 </style>
 <div id="hud"><div id="party"></div></div>
 <div id="enemyHud" hidden><strong id="enemyName"></strong><meter id="enemyLife" aria-label="Vida del enemigo"></meter></div>
 <aside id="navigation"><canvas id="map" width="162" height="130" aria-label="Mapa de la expedición"></canvas>
 <strong id="zone">Expedición de ceniza</strong><div id="objective"></div><button id="musicToggle" type="button" style="font-size:12px;padding:4px 8px">Música</button></aside>
 <div id="journal" hidden aria-live="polite"><canvas id="portrait" width="120" height="120" hidden></canvas><div id="speech"><strong id="speaker"></strong><div id="line"></div><button id="nextLine" hidden>Continuar · E</button></div></div>
-<div id="menu"><section><h1>Ruinas</h1><h2>Expedición de ceniza</h2><p id="intro">Llegás a Valdorna durante el eclipse. El rey desapareció esa misma noche. Buscá a la capitana en la ciudad.</p><button id="solo" disabled>Jugar solo</button><button id="duo" disabled>Dos en el mismo teclado</button><p>J1 · WASD, F ataque, G esquive. J2 · flechas, K ataque, L esquive. E interactúa.</p><label><input id="music" type="checkbox"> Música</label> <input id="musicVolume" type="range" min="0" max="100" value="32" aria-label="Volumen de música"><p id="loading">Cargando el mapa 3D…</p></section></div>
+<div id="menu"><section><h1>Ruinas</h1><h2>Expedición de ceniza</h2><p class="creator">Creado por <strong>Elian Alexander Pucheta</strong></p><p id="intro">Llegás a Valdorna durante el eclipse. El rey desapareció esa misma noche. Buscá a la capitana en la ciudad.</p><button id="solo" disabled>Jugar solo</button><button id="duo" disabled>Dos en el mismo teclado</button><p>J1 · WASD, F ataque, G esquive. J2 · flechas, K ataque, L esquive. E interactúa.</p><label><input id="music" type="checkbox"> Música</label> <input id="musicVolume" type="range" min="0" max="100" value="32" aria-label="Volumen de música"><p id="loading">Cargando el mapa 3D…</p></section></div>
 <script type="module">
 import * as T from 'https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js';
 const materialTextures=new Map();
