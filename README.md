@@ -4,7 +4,7 @@
 
 **RPG de acción y fantasía oscura para navegador.** Tras el eclipse, un caballero y su compañero arquero buscan al rey desaparecido. Atravesá las ruinas, seguí el rastro de la escolta y enfrentá a los apóstoles. Jugá solo o de a dos en el mismo teclado.
 
-**[Jugar en el navegador](https://eliancba.github.io/The-Lost-King/)** · se habilita al activar GitHub Pages.
+**[Jugar en el navegador](https://eliancba.github.io/The-Lost-King/)**
 
 Para jugar en local, descargá [index.html](./index.html) y abrilo en un navegador con conexión a internet.
 
